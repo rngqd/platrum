@@ -6,6 +6,7 @@
     <div class="main-table__buttons">
       <app-button label="Добавить человека" @click="toggleModal" />
       <app-button label="Установить тестовые данные" @click="setMockData" />
+      <app-button label="Очистить таблицу" @click="clearData" />
     </div>
   </div>
 </template>
@@ -86,7 +87,9 @@ export default {
     },
     setMockData() {
       this.$store.commit('updatePeopleList', this.mockData)
-      localStorage.setItem('users', JSON.stringify(this.mockData))
+    },
+    clearData() {
+      this.$store.commit('updatePeopleList', [])
     }
   },
   mounted() {

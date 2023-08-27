@@ -11,6 +11,7 @@ const store = new Vuex.Store({
   mutations: {
     updatePeopleList(state, newValue) {
       state.people = newValue
+      localStorage.setItem('users', JSON.stringify(newValue))
     },
 
     addPerson(state, newPersonData) {

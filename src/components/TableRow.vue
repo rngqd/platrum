@@ -99,14 +99,4 @@ export default {
 .table-row__toggle_expand {
   transform: rotate(45deg);
 }
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
 </style>

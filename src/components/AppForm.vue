@@ -53,11 +53,11 @@ export default {
   components: { AppButton },
   data() {
     return {
-      currentOption: null,
       personName: '',
       isValidName: false,
       personPhone: '',
-      isValidPhone: false
+      isValidPhone: false,
+      currentOption: null
     }
   },
   computed: {
@@ -72,7 +72,6 @@ export default {
     saveData(e) {
       e.preventDefault()
       const selectedParent = this.currentOption || null
-      console.log(selectedParent)
       this.$store.commit('addPerson', {
         name: this.personName,
         phone: this.personPhone,
