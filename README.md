@@ -18,7 +18,10 @@
 2. Vue mask для корректности ввода данных при создании нового пользователя
 
 Порядок запуска проекта
-1. Git clone
+1. Git clone https://github.com/rngqd/platrum
+2. cd vue-test
+3. npm install
+4. npm run dev
 ## Build Setup
 
 ``` bash
